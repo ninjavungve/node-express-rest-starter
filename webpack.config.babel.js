@@ -7,7 +7,7 @@ fs.readdirSync('node_modules')
   .forEach(file => nodeModules[file] = 'commonjs ' + file);
 
 module.exports = {
-  entry: './server.js',
+  entry: ['babel-polyfill', './server.js'],
   target: 'node',
   output: {
     path: path.join(__dirname, 'dist'),
@@ -20,8 +20,8 @@ module.exports = {
   externals: nodeModules,
   module: {
     loaders: [
-      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
-      { test: /\.js$/, loader: 'eslint-loader', exclude: /node_modules/ }
+      { test: /\.js$/, loader: 'babel-loader', query: { presets: ['env'] }, exclude: /node_modules/ },
+      { test: /\.js$/, loader: 'eslint-loader', query: { presets: ['env'] }, exclude: /node_modules/ }
     ]
   },
   stats: { colors: true },

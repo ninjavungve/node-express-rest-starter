@@ -1,4 +1,5 @@
 /* eslint-disable no-console */
+import 'babel-polyfill';
 import path from 'path';
 import cors from 'cors';
 import express from 'express';

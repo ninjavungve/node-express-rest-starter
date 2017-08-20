@@ -401,9 +401,9 @@ babel-istanbul@^0.12.2:
     which "1.2.x"
     wordwrap "1.0.x"
 
-babel-loader@^7.1.1:
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-7.1.1.tgz#b87134c8b12e3e4c2a94e0546085bc680a2b8488"
+babel-loader@^7.1.2:
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-7.1.2.tgz#f6cbe122710f1aa2af4d881c6d5b54358ca24126"
   dependencies:
     find-cache-dir "^1.0.0"
     loader-utils "^1.0.2"
@@ -931,8 +931,8 @@ camelcase@^3.0.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-3.0.0.tgz#32fc4b9fcdaf845fcdf7e73bb97cac2261f0ab0a"
 
 caniuse-lite@^1.0.30000715:
-  version "1.0.30000715"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000715.tgz#c327f5e6d907ebcec62cde598c3bf0dd793fb9a0"
+  version "1.0.30000716"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000716.tgz#2b40dd4a7edb7f0c468643b899b832b315988e6a"
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -1412,8 +1412,8 @@ es-to-primitive@^1.1.1:
     is-symbol "^1.0.1"
 
 es5-ext@^0.10.14, es5-ext@^0.10.9, es5-ext@~0.10.14:
-  version "0.10.27"
-  resolved "https://registry.yarnpkg.com/es5-ext/-/es5-ext-0.10.27.tgz#bf926b058c62b1cb5de1a887930673b6aa6d9a66"
+  version "0.10.29"
+  resolved "https://registry.yarnpkg.com/es5-ext/-/es5-ext-0.10.29.tgz#768eb2dfc4957bcf35fa0568f193ab71ede53fd8"
   dependencies:
     es6-iterator "2"
     es6-symbol "~3.1"

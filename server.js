@@ -10,10 +10,10 @@ import logger from './src/middleware/logger';
 
 const app = express();
 
-const staticDir = path.resolve(__dirname, 'public');
+const publicDir = path.resolve(__dirname, 'public');
 const loggerDir = path.resolve(__dirname, 'log');
 
-app.use(express.static(staticDir));
+app.use(express.static(publicDir));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
@@ -24,9 +24,9 @@ app.use('/api', router);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-    console.log('Environment:', app.get('env'));
-    console.log('Logger Dir:', loggerDir);
-    console.log('Static Dir:', staticDir);
+    console.log(`Environment: ${app.get('env')}`);
+    console.log(`Logger Dir: ${loggerDir}`);
+    console.log(`Public Dir: ${publicDir}`);
     console.log(`Started on port ${port}`);
 });
 
